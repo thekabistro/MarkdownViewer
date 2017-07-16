@@ -1,0 +1,25 @@
+{
+  "name": "markdownviewer",
+  "version": "1.0.0",
+  "description": "Web-based Markdown Viewer",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thekabistro/MarkdownViewer.git"
+  },
+  "keywords": [
+    "Web",
+    "Markdown",
+    "Viewer",
+    "ONline"
+  ],
+  "author": "Kabir Kuriyan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thekabistro/MarkdownViewer/issues"
+  },
+  "homepage": "https://github.com/thekabistro/MarkdownViewer#readme"
+}
