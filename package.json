@@ -1,5 +1,5 @@
 {
-  "name": "markdownviewer",
+  "name": "markdown-viewer",
   "version": "1.0.0",
   "description": "Web-based Markdown Viewer",
   "main": "server.js",

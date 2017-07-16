@@ -6,6 +6,10 @@ window.onload = function() {
     var markdownArea = document.getElementById('markdown');
 
 
+
+
+
+
     // make the tab act like a tab
    pad.addEventListener('keydown',function(e) {
        if(e.keyCode === 9) { // tab was pressed
@@ -38,4 +42,31 @@ window.onload = function() {
     pad.addEventListener('input', convertTextAreaToMarkdown);
 
     convertTextAreaToMarkdown();
+
+
+
+    //Sync Scrolling
+
+    var isSyncingLeftScroll = false;
+    var isSyncingRightScroll = false;
+    var leftDiv = document.getElementById('pad');
+    var rightDiv = document.getElementById('markdown');
+
+    leftDiv.onscroll = function() {
+      if (!isSyncingLeftScroll) {
+        isSyncingRightScroll = true;
+        rightDiv.scrollTop = this.scrollTop;
+      }
+      isSyncingLeftScroll = false;
+    }
+
+    rightDiv.onscroll = function() {
+      if (!isSyncingRightScroll) {
+        isSyncingLeftScroll = true;
+        leftDiv.scrollTop = this.scrollTop;
+      }
+      isSyncingRightScroll = false;
+    }
+
+
 };
